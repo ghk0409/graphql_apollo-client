@@ -8,17 +8,17 @@ const client = new ApolloClient({
     cache: new InMemoryCache(),
 });
 
-// client가 정상 연결 작동하는지 확인 (hook을 이용, 서버에 만들어둔 API 호출해보기)
-client
-    .query({
-        query: gql`
-            {
-                allMovies {
-                    title
-                }
-            }
-        `,
-    })
-    .then((data) => console.log(data));
+// client가 정상 연결 작동하는지 확인 (hook을 이용, 서버에 만들어둔 API 호출해보기) - TEST
+// client
+//     .query({
+//         query: gql`
+//             {
+//                 allMovies {
+//                     title
+//                 }
+//             }
+//         `,
+//     })
+//     .then((data) => console.log(data));
 
 export default client;
